@@ -1,4 +1,4 @@
-# Accoun management application
+# Account management application
 An account management application that supports 
 
 - The creation of new account
@@ -26,7 +26,7 @@ integrated into any client
 ## Step-By-Step guide to setup project on local system
 --clone the project
 --start your docker Engine
---run the follwing command from the root folder:
+--run the following command from the root folder:
 docker-compose up --build
 
 
