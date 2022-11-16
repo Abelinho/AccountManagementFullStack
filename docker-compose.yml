@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  accmanagerui:
+    build: ./AccManagerUI
+    ports:
+      - "3000:3000"
+    container_name: frontend-docker
+    restart: always
+    links:
+      - accountmanager-image
+
+  accountmanager-image:
+    build: ./accountManagementService
+    ports:
+      - "4444:4444"
+    container_name: backend-docker
+    restart: always
