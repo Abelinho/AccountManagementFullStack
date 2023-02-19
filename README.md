@@ -12,9 +12,9 @@ An account management application that supports
 - Springboot 2.7.5
 - JDK 1.8
 - Maven
--nodejs
+- Nodejs
 - Concurrent Hashmap for storage - This is an enhanced haspmap with thread safety.
---Docker
+- Docker
 
 ##Design
 -The application is loosely coupled with the backend running on an embedded Tomcat server
