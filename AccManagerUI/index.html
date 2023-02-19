@@ -138,8 +138,9 @@
 
         const withdrawFromAccount = (e) => {
             e.preventDefault();
-            const data = new FormData(e.target);
-            const account = data.get('account_number');
+            const data = new FormData(e.target);//equivalent to: const form = document.getElementbyId('withdrawal-form'); const data = new FormData(form)
+            //..The target property gets the element on which the event originally occurred, so 'data' is the <form> element 
+            const account = data.get('account_number');//'account' is the <input name='acount_number'> element
             
             function callback(response) {
               let content = "";
